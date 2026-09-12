@@ -7,8 +7,6 @@ public class PalindromeCheck {
 
     public static boolean isPalindrome(String input) {
 
-        input = input.toLowerCase();
-
         int left = 0;
         int right = input.length() - 1;
 

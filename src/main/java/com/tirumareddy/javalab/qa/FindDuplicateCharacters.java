@@ -10,16 +10,16 @@ public class FindDuplicateCharacters {
     public static Set<Character> findDuplicateCharacters(String input) {
 
         Set<Character> seen = new HashSet<>();
-        Set<Character> duplicateList = new LinkedHashSet<>();
+        Set<Character> duplicateSet = new LinkedHashSet<>();
 
         char[] charArray = input.toCharArray();
 
         for (char c : charArray) {
 
             if (!seen.add(c)) {
-                duplicateList.add(c);
+                duplicateSet.add(c);
             }
         }
-        return (duplicateList);
+        return (duplicateSet);
     }
 }
